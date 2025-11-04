@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(QSize(800, 600));
+    this->statusBar()->setSizeGripEnabled(false);
     cir_x = width() / 2 - d;
     cir_y = height() / 2 - d;
 }
